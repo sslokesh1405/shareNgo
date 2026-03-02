@@ -47,33 +47,32 @@ https://sslokesh1405.github.io/shareNgo/
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login Page](screenshots/bbbae441-be15-480a-b6b9-096c909d50bb.png)
+![Login Page](./screenshots/bbbae441-be15-480a-b6b9-096c909d50bb.png)
 
 ---
 
 ### 🏠 Home Page
-![Home Page](screenshots/ce4a24c6-daf3-489e-a081-300f096a5f03.png)
+![Home Page](./screenshots/ce4a24c6-daf3-489e-a081-300f096a5f03.png)
 
 ---
 
 ### ➕ Create a Ride
-![Create Ride](screenshots/1955e9b7-a0e7-44cb-a4ef-afb6f170cb80.png)
+![Create Ride](./screenshots/1955e9b7-a0e7-44cb-a4ef-afb6f170cb80.png)
 
 ---
 
 ### 🔍 Filter Rides
-![Filter Rides](screenshots/e45c5c56-8130-4412-be0d-6a63ff75d2c1.png)
+![Filter Rides](./screenshots/e45c5c56-8130-4412-be0d-6a63ff75d2c1.png)
 
 ---
 
 ### 📜 Ride History
-![Ride History](screenshots/6c976d01-33fc-4cd0-9b8f-938012c30136.png)
+![Ride History](./screenshots/6c976d01-33fc-4cd0-9b8f-938012c30136.png)
 
 ---
 
 ### 🚕 My Rides
-![My Rides](screenshots/2cf2d833-595e-41c3-9b08-54f6a44f1869.png)
----
+![My Rides](./screenshots/2cf2d833-595e-41c3-9b08-54f6a44f1869.png)
 
 ## 📂 Project Structure
 ShareNGo/
