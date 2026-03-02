@@ -17,7 +17,7 @@ https://sslokesh1405.github.io/shareNgo/
 ⚠️ Note:
 - The app always starts from the **login page**
 - Direct access to internal pages is blocked
-- Authentication is handled using **browser LocalStorage**
+- Authentication is handled using **Cloud**
 
 ---
 
@@ -40,10 +40,7 @@ https://sslokesh1405.github.io/shareNgo/
 - HTML  
 - CSS  
 - JavaScript  
-- LocalStorage  
-
-> No backend is used.  
-> Entire application runs in the browser.
+- Firebase
 
 ---
 
