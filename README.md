@@ -50,46 +50,32 @@ https://sslokesh1405.github.io/shareNgo/
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-User authentication screen where users log in or sign up.
-
-![Login Page](Screenshot 2026-03-02 132146.png)
+![Login Page](login.png)
 
 ---
 
-### 🏠 Home Page (Available Rides)
-Main dashboard showing available rides and navigation options.
-
-![Home Page](Screenshot 2026-03-02 132210.png)
+### 🏠 Home Page
+![Home Page](home.png)
 
 ---
 
 ### ➕ Create a Ride
-Users can create a new ride by entering route, date, time, vehicle type, passengers, and price.
-
-![Create Ride](Screenshot 2026-03-02 132227.png)
+![Create Ride](create_ride.png)
 
 ---
 
 ### 🔍 Filter Rides
-Filter rides based on location, vehicle type, price, date, and time.
-
-![Filter Rides](Screenshot 2026-03-02 132245.png)
+![Filter Rides](filter.png)
 
 ---
 
 ### 📜 Ride History
-Displays all previously booked rides with complete details.
-
-![Ride History](Screenshot 2026-03-02 132308.png)
+![Ride History](ride_history.png)
 
 ---
 
 ### 🚕 My Rides
-Shows the rides booked by the current user.
-
-![My Rides](Screenshot 2026-03-02 132332.png)
-
----
+![My Rides](my_rides.png)
 
 ## 📂 Project Structure
 shareNgo/
