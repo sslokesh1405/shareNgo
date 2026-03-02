@@ -5,6 +5,18 @@ SHARENGO is an innovative, university-focused carpooling app that connects stude
 ShareNGo is a **simple university ride sharing web app**.  
 Students can **create rides**, **find rides**, **book rides**, and **chat** with ride owners.
 
+## 🌐 Live Demo
+
+The project is hosted using **GitHub Pages**.
+
+🔗 Live URL:  
+https://sslokesh1405.github.io/shareNgo/
+
+⚠️ Note:
+- The app always starts from the **login page**
+- Direct access to internal pages is blocked
+- Login is handled using browser LocalStorage
+
 ---
 
 ## ✨ Features
