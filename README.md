@@ -1,9 +1,9 @@
 # 🚗 ShareNGo
 
 **ShareNGo** is a university-focused ride sharing web application that helps students and staff  
-**create rides, find rides, and share rides easily** within a trusted campus community.
+create, find, and book rides easily within a trusted campus community.
 
-The project focuses on **simplicity, usability, and clean UI**, built completely using frontend technologies.
+The project is built using **pure frontend technologies** with a clean and simple user interface.
 
 ---
 
@@ -17,7 +17,7 @@ https://sslokesh1405.github.io/shareNgo/
 ⚠️ Note:
 - The app always starts from the **login page**
 - Direct access to internal pages is blocked
-- Authentication is handled using **Cloud**
+- Authentication is handled using **browser LocalStorage**
 
 ---
 
@@ -40,51 +40,54 @@ https://sslokesh1405.github.io/shareNgo/
 - HTML  
 - CSS  
 - JavaScript  
-- Cloud Storage
+- LocalStorage  
+
+> No backend is used.  
+> Entire application runs in the browser.
 
 ---
 
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-User authentication page where users log in or sign up.
+User authentication screen where users log in or sign up.
 
-![Login Page](./screenshots/bbbae441-be15-480a-b6b9-096c909d50bb.png)
+![Login Page](Screenshot 2026-03-02 132146.png)
 
 ---
 
 ### 🏠 Home Page (Available Rides)
 Main dashboard showing available rides and navigation options.
 
-![Home Page](./screenshots/ce4a24c6-daf3-489e-a081-300f096a5f03.png)
+![Home Page](Screenshot 2026-03-02 132210.png)
 
 ---
 
 ### ➕ Create a Ride
-Page to create a new ride by entering route, date, time, vehicle, passengers, and price.
+Users can create a new ride by entering route, date, time, vehicle type, passengers, and price.
 
-![Create Ride](./screenshots/1955e9b7-a0e7-44cb-a4ef-afb6f170cb80.png)
+![Create Ride](Screenshot 2026-03-02 132227.png)
 
 ---
 
 ### 🔍 Filter Rides
 Filter rides based on location, vehicle type, price, date, and time.
 
-![Filter Rides](./screenshots/e45c5c56-8130-4412-be0d-6a63ff75d2c1.png)
+![Filter Rides](Screenshot 2026-03-02 132245.png)
 
 ---
 
 ### 📜 Ride History
-Displays all previously booked rides with details.
+Displays all previously booked rides with complete details.
 
-![Ride History](./screenshots/6c976d01-33fc-4cd0-9b8f-938012c30136.png)
+![Ride History](Screenshot 2026-03-02 132308.png)
 
 ---
 
 ### 🚕 My Rides
 Shows the rides booked by the current user.
 
-![My Rides](./screenshots/2cf2d833-595e-41c3-9b08-54f6a44f1869.png)
+![My Rides](Screenshot 2026-03-02 132332.png)
 
 ---
 
@@ -99,8 +102,8 @@ shareNgo/
 ├── chat.html # Chat page
 ├── ride_history.html # Ride history
 ├── styles.css # Styling
-├── screenshots/ # Project screenshots
 ├── README.md
+├── Screenshot *.png # Project screenshots
 
 
 ---
@@ -110,7 +113,7 @@ shareNgo/
 1. Clone or download the repository  
 2. Open `authentication.html` in your browser  
 3. Sign up or log in  
-4. Start using the app  
+4. Start using the application  
 
 ✔ No installation required
 
@@ -120,7 +123,7 @@ shareNgo/
 
 - Data is stored using **LocalStorage**
 - Clearing browser data will remove all users and rides
-- This project is for **learning and demonstration purposes**
+- This project is built for **learning and demonstration purposes**
 
 ---
 
