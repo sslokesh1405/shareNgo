@@ -49,8 +49,6 @@ https://sslokesh1405.github.io/shareNgo/
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### 🔐 Login Page
 ![Login Page](screenshots/bbbae441-be15-480a-b6b9-096c909d50bb.png)
 
