@@ -1,9 +1,11 @@
-# shareNgo
-SHARENGO is an innovative, university-focused carpooling app that connects students and staff traveling to and from campus. Designed to promote convenience, sustainability, and affordability, SHARENGO offers a platform for ride-sharing within a trusted community
 # 🚗 ShareNGo
 
-ShareNGo is a **simple university ride sharing web app**.  
-Students can **create rides**, **find rides**, **book rides**, and **chat** with ride owners.
+**ShareNGo** is a university-focused ride sharing web application that helps students and staff  
+**create rides, find rides, and share rides easily** within a trusted campus community.
+
+The project focuses on **simplicity, usability, and clean UI**, built using only frontend technologies.
+
+---
 
 ## 🌐 Live Demo
 
@@ -15,73 +17,113 @@ https://sslokesh1405.github.io/shareNgo/
 ⚠️ Note:
 - The app always starts from the **login page**
 - Direct access to internal pages is blocked
-- Login is handled using browser LocalStorage
+- Authentication is handled using **browser LocalStorage**
 
 ---
 
 ## ✨ Features
 
-- Login and Sign Up (stored in browser)
+- Login and Sign Up
+- Secure page access (login required)
 - Create a new ride
 - View available rides
-- Filter rides by place, date, price, and vehicle
+- Filter rides by location, date, time, price, and vehicle
 - Book a ride
-- View "My Rides"
-- Cancel rides
-- Chat with ride owner
+- View booked rides (My Rides)
 - View ride history
+- Logout functionality
 
 ---
 
-## 🛠️ Tech Used
+## 🛠️ Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-- LocalStorage (for data saving)
+- HTML  
+- CSS  
+- JavaScript  
+- LocalStorage  
 
-No backend is used.  
-Everything runs in the browser.
+> No backend is used.  
+> Entire application runs in the browser.
 
 ---
 
-## 📂 Project Files
-📁 ShareNGo
+## 📸 Screenshots
+
+### 🔐 Login Page
+User authentication page where users can log in or sign up.
+
+![Login Page](bbbae441-be15-480a-b6b9-096c909d50bb.png)
+
+---
+
+### 🏠 Home Page (Available Rides)
+Main dashboard displaying available rides and navigation options.
+
+![Home Page](ce4a24c6-daf3-489e-a081-300f096a5f03.png)
+
+---
+
+### ➕ Create a Ride
+Page to create a new ride by entering route, date, time, vehicle, passengers, and price.
+
+![Create Ride](1955e9b7-a0e7-44cb-a4ef-afb6f170cb80.png)
+
+---
+
+### 🔍 Filter Rides
+Filter rides based on start location, destination, vehicle type, price, date, and time.
+
+![Filter Rides](e45c5c56-8130-4412-be0d-6a63ff75d2c1.png)
+
+---
+
+### 📜 Ride History
+Displays all previously booked rides with details.
+
+![Ride History](6c976d01-33fc-4cd0-9b8f-938012c30136.png)
+
+---
+
+### 🚕 My Rides
+Shows the rides booked by the current user.
+
+![My Rides](2cf2d833-595e-41c3-9b08-54f6a44f1869.png)
+
+---
+
+## 📂 Project Structure
+ShareNGo/
 │
+├── authentication.html # Login & Sign Up
 ├── index.html # Home page
-├── authentication.html # Login & Sign up
 ├── ride_creation.html # Create ride
 ├── filter.html # Filter rides
 ├── my_rides.html # Booked rides
 ├── chat.html # Chat page
 ├── ride_history.html # Ride history
 ├── styles.css # Styling
-├── logo.png # App logo
+├── README.md
+├── *.png # Screenshots & logo
+
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run Locally
 
-1. Download or clone the repo  
+1. Clone or download the repository  
 2. Open `authentication.html` in your browser  
-3. Sign up and login  
-4. Start using the app
+3. Sign up or log in  
+4. Start using the app  
 
-No install needed ✔️
-
----
-
-## 📸 Logo
-
-![ShareNGo Logo](1000153140-removebg.png)
+✔ No installation required
 
 ---
 
-## ⚠️ Note
+## ⚠️ Important Notes
 
 - Data is stored using **LocalStorage**
-- Data will be lost if browser data is cleared
-- This project is for **learning/demo purpose**
+- Clearing browser data will remove user and ride data
+- This project is built for **learning and demonstration purposes**
 
 ---
 
@@ -92,9 +134,10 @@ Student Project – Web Development
 
 ---
 
-## ⭐ Future Ideas
+## ⭐ Future Enhancements
 
-- Add real backend (Firebase / Node)
+- Firebase / backend integration
 - Real-time chat
-- Google Maps location
+- Google Maps integration
 - Payment system
+- Mobile responsiveness improvements
