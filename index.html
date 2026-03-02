@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShareNGo - Home</title>
+
+    <!-- 🔐 LOGIN CHECK (NEW CODE) -->
+    <script>
+        (function () {
+            const loggedInUser = localStorage.getItem("loggedInUser");
+            if (!loggedInUser) {
+                window.location.replace("authentication.html");
+            }
+        })();
+    </script>
+
     <style>
         body {
             margin: 0;
@@ -59,17 +70,6 @@
             border-radius: 10px;
             margin-bottom: 1.5rem;
             text-align: left;
-            transition: all 0.3s ease;
-        }
-
-        .ride-box:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .ride-box p {
-            margin: 0.5rem 0;
-            color: #444;
         }
 
         .ride-box .select-btn {
@@ -81,7 +81,6 @@
             padding: 0.8rem;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 1rem;
         }
 
         .ride-box .select-btn:hover {
@@ -89,6 +88,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2>Welcome to ShareNGo</h2>
@@ -100,13 +100,13 @@
             <a href="filter.html" class="btn">Filter</a>
             <a href="ride_history.html" class="btn">Ride History</a>
             <a href="my_rides.html" class="btn">My Rides</a>
+            <button class="btn" onclick="logout()">Logout</button>
         </div>
 
-        <!-- Available Rides Section -->
+        <!-- Available Rides -->
         <div class="available-rides">
             <h3>Available Rides</h3>
 
-            <!-- Ride 1 -->
             <div class="ride-box">
                 <p><strong>Date:</strong> 2025-02-20</p>
                 <p><strong>Time:</strong> 10:30 AM</p>
@@ -116,45 +116,21 @@
                 <p><strong>Price:</strong> ₹1200</p>
                 <button class="select-btn" onclick="selectRide('2025-02-20', '10:30 AM', 'Downtown', 'Airport', 'Car', '1200')">Select Ride</button>
             </div>
-
-            <!-- Ride 2 -->
-            <div class="ride-box">
-                <p><strong>Date:</strong> 2025-02-21</p>
-                <p><strong>Time:</strong> 2:00 PM</p>
-                <p><strong>From:</strong> City Center</p>
-                <p><strong>To:</strong> University</p>
-                <p><strong>Vehicle:</strong> Auto</p>
-                <p><strong>Price:</strong> ₹300</p>
-                <button class="select-btn" onclick="selectRide('2025-02-21', '2:00 PM', 'City Center', 'University', 'Auto', '300')">Select Ride</button>
-            </div>
-
-            <!-- Ride 3 -->
-            <div class="ride-box">
-                <p><strong>Date:</strong> 2025-02-22</p>
-                <p><strong>Time:</strong> 6:45 PM</p>
-                <p><strong>From:</strong> Train Station</p>
-                <p><strong>To:</strong> Mall</p>
-                <p><strong>Vehicle:</strong> Car</p>
-                <p><strong>Price:</strong> ₹500</p>
-                <button class="select-btn" onclick="selectRide('2025-02-22', '6:45 PM', 'Train Station', 'Mall', 'Car', '500')">Select Ride</button>
-            </div>
         </div>
     </div>
 
     <script>
         function selectRide(date, time, from, to, vehicle, price) {
             let selectedRides = JSON.parse(localStorage.getItem("myRides")) || [];
-
-            let ride = { date, time, from, to, vehicle, price, owner: "Ride Owner" };
-
-            selectedRides.push(ride);
-
+            selectedRides.push({ date, time, from, to, vehicle, price });
             localStorage.setItem("myRides", JSON.stringify(selectedRides));
-
             alert("Ride selected successfully!");
-
-            // Redirect to "My Rides"
             window.location.href = "my_rides.html";
+        }
+
+        function logout() {
+            localStorage.removeItem("loggedInUser");
+            window.location.replace("authentication.html");
         }
     </script>
 </body>
